@@ -32,50 +32,50 @@
   </head>
   <body>
     <div class="container mt-5">
-      <div class="d-flex justify-content-between flex-wrap">
+      <div class="container mt-5 d-flex justify-content-between">
         <h2>Chemical supplies</h2>
-        <div class="toolbar mb-3 d-flex flex-wrap">
-          <button class="btn btn-primary mb-2 mr-2" onclick="addRow()">
+        <div class="toolbar mb-3">
+          <button class="btn btn-primary" onclick="addRow()">
             <i class="fa-solid fa-circle-plus"></i>
           </button>
-          <button class="btn btn-secondary mb-2 mr-2" onclick="moveRowUp()">
+          <button class="btn btn-secondary" onclick="moveRowUp()">
             <i class="fa-solid fa-arrow-up"></i>
           </button>
-          <button class="btn btn-secondary mb-2 mr-2" onclick="moveRowDown()">
+          <button class="btn btn-secondary" onclick="moveRowDown()">
             <i class="fa-solid fa-arrow-down"></i>
           </button>
-          <button class="btn btn-danger mb-2 mr-2" onclick="deleteRow()">
+          <button class="btn btn-danger" onclick="deleteRow()">
             <i class="fa-solid fa-trash"></i>
           </button>
-          <button class="btn btn-warning mb-2 mr-2" onclick="refreshData()">
+          <button class="btn btn-warning" onclick="refreshData()">
             <i class="fa-solid fa-rotate-right"></i>
           </button>
-          <button class="btn btn-success mb-2" onclick="saveData()">
+          <button class="btn btn-success" onclick="saveData()">
             <i class="fa-solid fa-file-shield"></i>
           </button>
         </div>
       </div>
 
-      <div class="table-responsive">
-        <table id="chemicalTable" class="table table-bordered">
-          <thead class="thead-dark">
-            <tr>
-              <th class="sortable" onclick="sortTable(0)">ID</th>
-              <th class="sortable" onclick="sortTable(1)">Chemical Name</th>
-              <th class="sortable" onclick="sortTable(2)">Vendor</th>
-              <th class="sortable" onclick="sortTable(3)">Density</th>
-              <th class="sortable" onclick="sortTable(4)">Viscosity</th>
-              <th class="sortable" onclick="sortTable(5)">Packaging</th>
-              <th class="sortable" onclick="sortTable(6)">Pack Size</th>
-              <th class="sortable" onclick="sortTable(7)">Unit</th>
-              <th class="sortable" onclick="sortTable(8)">Quantity</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-      </div>
-    </div>
+      <table id="chemicalTable" class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th class="sortable" onclick="sortTable(0)">ID</th>
+            <th class="sortable" onclick="sortTable(1)">Chemical Name</th>
+            <th class="sortable" onclick="sortTable(2)">Vender</th>
+            <th class="sortable" onclick="sortTable(3)">Density</th>
+            <th class="sortable" onclick="sortTable(4)">Viscosity</th>
+            <th class="sortable" onclick="sortTable(5)">Packaging</th>
+            <th class="sortable" onclick="sortTable(6)">Pack Size</th>
+            <th class="sortable" onclick="sortTable(7)">Unit</th>
+            <th class="sortable" onclick="sortTable(8)">Quantity</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+           
+        </tbody>
+      </table>
 
+    
     <script src="index.js"></script>
   </body>
 </html>
